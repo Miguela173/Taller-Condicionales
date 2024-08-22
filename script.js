@@ -16,4 +16,12 @@ if (numeroUsuario >= 0) {
     console.log("El número es negativo"); 
 }
 
+/* 3-Ejercicio */
+
+let numero = parseFloat(prompt("Ingrese un número: "));
+if (numero % 2 === 0) {
+    console.log("El número es par");
+} else {
+    console.log("El número es impar");
+}
 
