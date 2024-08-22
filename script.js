@@ -115,3 +115,17 @@ if (adivinaNumero === numeroAleatorio) {
 } else {
     console.log("Has perdido! El número era " + numeroAleatorio);
 }
+
+/* 11-Ejercicio */
+
+let PrecioBase = parseFloat(prompt("Ingrese el precio base del producto: "));
+if (PrecioBase > 500) {
+    let descuento = PrecioBase * 0.15;
+    console.log("El precio del producto con descuento es: " + (PrecioBase - descuento));
+} else if (PrecioBase >= 300 && PrecioBase <= 500) {
+    let descuento = PrecioBase * 0.10;
+    console.log("El precio del producto con descuento es: " + (PrecioBase - descuento));
+} else {
+    let descuento = PrecioBase * 0.05;
+    console.log("El precio del producto con descuento es: " + (PrecioBase - descuento));
+}
