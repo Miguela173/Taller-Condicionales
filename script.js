@@ -92,3 +92,17 @@ switch (OpcioMenu) {
     default:
         console.log("Opción no válida");
 }
+
+/* 9-Ejercicio  */
+
+let LadoTriangulo = parseFloat(prompt("Ingrese el primer lado del triángulo: "));
+let LadoTriangulo2 = parseFloat(prompt("Ingrese el segundo lado del triángulo: "));
+let LadoTriangulo3 = parseFloat(prompt("Ingrese el tercer lado del triángulo: "));
+if (LadoTriangulo === LadoTriangulo2 && LadoTriangulo2 === LadoTriangulo3) {
+    console.log("El triángulo es equilátero");
+} else if (LadoTriangulo === LadoTriangulo2 || LadoTriangulo2 === LadoTriangulo3 || LadoTriangulo3 === LadoTriangulo) {
+    console.log("El triángulo es isósceles");
+} else {
+    console.log("El triángulo es escaleno");
+}
+
