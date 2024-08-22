@@ -139,3 +139,12 @@ if ((año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0)) {
     console.log("El año " + año + " no es bisiesto.");
 }
 
+/* 13-Ejercicio */
+
+let usuario = prompt("Ingrese el nombre de usuario: ");
+let contrasena = prompt("Ingrese la contraseña: ");
+if (usuario === "admin" && contrasena === "1234") {
+    console.log("Acceso concedido");
+} else {
+    console.log("Acceso denegado");
+}
