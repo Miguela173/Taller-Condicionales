@@ -75,3 +75,20 @@ if (nota >= 90 && nota <= 100) {
 } else {
     console.log("Nota no válida");
 }
+
+/* 8-Ejercicio */
+
+let OpcioMenu = prompt("Elija una opción de menú: 1.- Pizza 2.- Hamburguesa 3.- Tacos");
+switch (OpcioMenu) {
+    case '1':
+        console.log("Has elegido pizza");
+        break;
+    case '2':
+        console.log("Has elegido hamburguesa");
+        break;
+    case '3':
+        console.log("Has elegido tacos");
+        break;
+    default:
+        console.log("Opción no válida");
+}
