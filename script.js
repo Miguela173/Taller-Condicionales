@@ -60,3 +60,18 @@ if (ClasifiacionDeEdad >= 0 && ClasifiacionDeEdad <= 12) {
 } else if (ClasifiacionDeEdad >= 64) {
     console.log("Eres un adulto mayor");
 }
+
+/* 7-Ejercicio */
+
+let nota = parseFloat(prompt("Ingrese una nota entre 0 y 100: "));
+if (nota >= 90 && nota <= 100) {
+    console.log("¡EXCELENTE!");
+} else if (nota >= 70 && nota <= 89) {
+    console.log("Aprobado");
+} else if (nota >= 50 && nota <= 69) {
+    console.log("Regular");
+} else if (nota >= 0 && nota <= 49) {
+    console.log("Reprobado");
+} else {
+    console.log("Nota no válida");
+}
