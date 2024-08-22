@@ -65,13 +65,13 @@ if (ClasifiacionDeEdad >= 0 && ClasifiacionDeEdad <= 12) {
 
 let nota = parseFloat(prompt("Ingrese una nota entre 0 y 100: "));
 if (nota >= 90 && nota <= 100) {
-    console.log("¡EXCELENTE!");
+    console.log("Excelente");
 } else if (nota >= 70 && nota <= 89) {
     console.log("Aprobado");
 } else if (nota >= 50 && nota <= 69) {
     console.log("Regular");
 } else if (nota >= 0 && nota <= 49) {
-    console.log("Reprobado");
+    console.log("Insuficiente");
 } else {
     console.log("Nota no válida");
 }
@@ -111,9 +111,9 @@ if (LadoTriangulo === LadoTriangulo2 && LadoTriangulo2 === LadoTriangulo3) {
 let adivinaNumero = parseInt(prompt("Adivina un número entre 1 y 10: "));
 let numeroAleatorio = Math.floor(Math.random() * 10) + 1;
 if (adivinaNumero === numeroAleatorio) {
-    console.log("Has ganado!");
+    console.log("Has Acertado!");
 } else {
-    console.log("Has perdido! El número era " + numeroAleatorio);
+    console.log("inteta de nuveo");
 }
 
 /* 11-Ejercicio */
@@ -129,3 +129,13 @@ if (PrecioBase > 500) {
     let descuento = PrecioBase * 0.05;
     console.log("El precio del producto con descuento es: " + (PrecioBase - descuento));
 }
+
+/* 12-Ejercicio */
+
+let año = parseInt(prompt("Ingrese un año: "));
+if ((año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0)) {
+    console.log("El año " + año + " es bisiesto.");
+} else {
+    console.log("El año " + año + " no es bisiesto.");
+}
+
