@@ -106,3 +106,12 @@ if (LadoTriangulo === LadoTriangulo2 && LadoTriangulo2 === LadoTriangulo3) {
     console.log("El triángulo es escaleno");
 }
 
+/* 10-Ejercicio */
+
+let adivinaNumero = parseInt(prompt("Adivina un número entre 1 y 10: "));
+let numeroAleatorio = Math.floor(Math.random() * 10) + 1;
+if (adivinaNumero === numeroAleatorio) {
+    console.log("Has ganado!");
+} else {
+    console.log("Has perdido! El número era " + numeroAleatorio);
+}
